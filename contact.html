@@ -10,7 +10,7 @@
   <body>
     <header>
       <a href="index.html" id="logo">
-        <h1>Duke Johnson</h1>
+        <h1 id="name">Duke Johnson</h1>
         <h2>NEEERRRD</h2>
       </a>
       <nav>
@@ -41,5 +41,22 @@
         <p>&copy; 2016 Duke Johnson</p>
       </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      var element = $('#name');
+
+      function getLatest() {
+        $.get('http://swapi.co/api/people/').then(function(res){
+          console.log(res);
+          // element.html(res.name);
+        });
+      };
+
+      getLatest();
+
+      //setInterval(getLatest, 3000);
+    </script>
+
   </body>
 </html>
