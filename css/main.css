@@ -31,7 +31,7 @@ Header
 ***************************************/
 
 header{
-  float: left;
+  float: left;   /* prufa að taka float út þegar að ég er búinn að gera desktop útgáfuna  sjá hvað breytist */
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
   width: 100%;
